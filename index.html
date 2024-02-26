@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        background-color: black;
+        width: 100%;
+        flex-basis: 5%;        
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul {
+        display: flex;
+        flex-basis: 30%;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+/*-----------------------------------------------------------------*/
+    .first-section {
+        min-width: 0;
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    img {
+        width: 600px;
+        height: 400px;
+    }
+
+    section,p {
+        font-size: small;
+        margin-top: 0;
+    }
+/*---------------------------------------------------------------------*/
+    h2 {
+        flex-basis: 3%;
+    }
+/*--------------------------------------------------------------------*/
+    .section-container {
+        display: flex;
+    }
+
+    .second-section {
+        min-width: 0;
+        height: 20%;
+        padding: 10px;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+/*-------------------------------------------------------------------*/
+    footer {
+        width: 100%;
+        height: 75px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+</style>
+<body>
+    <header>
+        <nav>
+            <h1>Welcome to Software Design Website</h1>
+            <ul>
+                <li><a>About Us</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="first-section">
+        <h2>About Us</h2>
+        <p>We are a company dedicated to providing excellent services for our customers.</p>
+        <img src="img_chania.jpg">
+    </section>
+    <h2>Our Services</h2>
+    <section class="section-container">
+        <section class="second-section">
+            <h2>Web Development</h2>
+            <p>We specialize in creating responsive and user-friendly websites.</p>
+            <img src="pic_trulli.jpg">
+        </section>
+        <section class="second-section">
+            <h2>Graphic Design</h2>
+            <p>Our talented designers can bring our ideas to life with stunning visuals.</p>
+            <img src="img_girl.jpg">
+        </section>
+    </section>
+    <footer><p>© 2024 The Lucky Company. All rights reserved</p></footer>
+</body>
+</html>
